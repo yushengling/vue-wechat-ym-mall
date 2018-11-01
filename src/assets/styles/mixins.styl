@@ -1,0 +1,19 @@
+@charset "UTF-8"
+
+text-ellipsis()
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+  word-break break-all
+
+line-ellipsis(n)
+  display -webkit-box
+  overflow hidden
+  text-overflow ellipsis
+  word-break break-all
+  -webkit-line-clamp n
+  -webkit-box-orient vertical
+
+icon-size(n)
+  width n
+  height n

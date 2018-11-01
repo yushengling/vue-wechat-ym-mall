@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+html {
+  text-size-adjust: 100%; // 禁止iphone横屏放大字体
+  font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
+  line-height: 1.2;
+  touch-action: manipulation; // 点击事件的延迟
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; // 字体抗锯齿渲染
+  user-select: none; // 文本不能被选择
+  box-sizing: border-box;
+  color: #333;
+}
+
+body,
+html {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #f2f2f2;
+}
+
+div {
+  font-size: 14px;
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+sumary,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: 0;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  appearance: none;
+}
+/*输入框提示语的字体样式*/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  /*解决input的type="number"在部分手机端会出现一个小按钮*/
+  -webkit-appearance: none;
+  /*去除系统默认appearance的样式,常用于IOS下移除原生样式*/
+}
+
+a,
+img {
+  -webkit-touch-callout: none;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
